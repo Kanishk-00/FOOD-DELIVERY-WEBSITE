@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+}
+
+.navbar{
+    padding: 20px 50px;
+    z-index: 1;
+    background-color: lightblue;
+}
+
+.navbar .navbar-brand{
+    font-size: 20px;
+}
+
+.navbar .navbar-items-div{
+    display: inline-flex;
+    float: right;
+    margin-top: 3px;
+}
+
+.navbar .navbar-nav{
+    display: inline-flex;
+    margin: 0px;
+
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .nav-item{
+    display: inline-flex;
+    padding: 0px 10px;
+}

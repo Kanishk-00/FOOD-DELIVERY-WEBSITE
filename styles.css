@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-body{
+body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
 
-.starting-page{
+.starting-page {
     background-image: url("img/main-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -13,50 +13,50 @@ body{
     height: 600px;
 }
 
-.starting-page .masking-div{
+.starting-page .masking-div {
     background: rgba(0, 0, 0, 0.5);
     height: 600px;
 }
 
-.navbar{
+.navbar {
     padding: 20px 50px;
     z-index: 1;
     /* background-color: #ffffff;
     opacity: 0.6; */
-    background: rgba(255, 255, 255, 0.7);
+    /* opacity: 0; */
+    background: rgba(93, 85, 85, 0.7);
     border: 1px solid black;
     /* background-color: lightblue; */
 }
 
-.navbar .navbar-brand{
+.navbar .navbar-brand {
     font-size: 20px;
     font-weight: bold;
     /* color: white; */
-    color: #000000;
-    opacity: 2;
+    color: white;
+    opacity: 1;
 
 }
 
-.navbar .navbar-items-div{
+.navbar .navbar-items-div {
     display: inline-flex;
     float: right;
     margin-top: 3px;
 }
 
-.navbar .navbar-nav{
+.navbar .navbar-nav {
     display: inline-flex;
     margin: 0px;
-
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     /* color: white; */
-    color: #000000;
-
+    color: white;
 }
 
-.navbar .nav-item{
+
+.navbar .nav-item {
     display: inline-flex;
     color: white;
     padding: 0px 10px;
@@ -65,24 +65,25 @@ body{
 
 }
 
-.location-search{
+
+.location-search {
     color: white;
     text-align: center;
     margin-top: 120px;
 }
 
-.location-search h1{
+.location-search h1 {
     font-size: 60px;
     font-weight: bolder;
     margin-bottom: 0;
 }
 
-.location-search h2{
+.location-search h2 {
     font-size: 30px;
     margin-top: 10px;
 }
 
-.location-input{
+.location-input {
     background-color: white;
     display: inline-flex;
     width: 50%;
@@ -90,7 +91,7 @@ body{
     margin-top: 20px;
 }
 
-.location-search select{
+.location-search select {
     font-size: 18px;
     width: 30%;
     border: none;
@@ -100,7 +101,7 @@ body{
 
 }
 
-.location-search-box{
+.location-search-box {
     font-size: 18px;
     width: 70%;
     border: none;
@@ -109,6 +110,66 @@ body{
     border-bottom-right-radius: 10px;
 }
 
-.location-search-box:focus, .location-search select{
+.location-search-box:focus,
+.location-search select {
     outline: none;
 }
+
+
+/* Services section starts */
+
+.img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+
+.flex-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    font-family: Okra, Helvetica, sans-serif;
+    line-height: 1.25;
+}
+
+.flex-item {
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    /* padding: 1rem 2rem 1.6rem;
+    width: 100%; */
+    background: white;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 1.2rem;
+}
+
+.flex-content>h4 {
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+#flex-item-1 {
+    margin-left: 200px;
+}
+
+#flex-item-3 {
+    margin-right: 200px;
+}
+
+.flex-content {
+    text-align: left;
+    padding: 10px;
+}
+
+/* Services section ends */

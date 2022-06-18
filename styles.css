@@ -201,22 +201,6 @@ body {
     position: relative;
 }
 
-/* #collection-card-1{
-    background-image: url(img/collection_trending_bg.jpg);
-}
-
-#collection-card-2{
-    background-image: url(img/collection_dining_table.jpg);
-}
-
-#collection-card-3{
-    background-image: url(img/collection_bars.jpg);
-}
-
-#collection-card-4{
-    background-image: url(img/collection_romantic_dining_table.jpg);
-} */
-
 .collection-card-image{
     position: relative;
     max-width: 100%;
@@ -246,6 +230,102 @@ body {
     margin-top: 3px;
     padding:0px 20px;
 }
+
+/* Collections End */
+
+/* Popular Locations */
+
+.popular-locations{
+    padding: 30px 210px;
+}
+
+.all-location-cards{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;   
+    justify-content: space-between; 
+    margin-top: 20px;
+}
+
+.location-card{
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 10px;
+    min-width: 27%;
+    padding: 15px 25px;
+    position: relative;
+    margin: 0 auto 20px;
+    transition: box-shadow 0.3s;
+}
+
+.location-card:hover{
+    box-shadow: 10px 10px 10px -15px #111;
+}
+
+.location-card p{
+    margin: 0px;
+}
+
+.redirecting-arrow{
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+}
+
+.location-card-heading{
+    margin: 0px;
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 7px!important;
+}
+
+.location-card-places{
+    position: relative;
+}
+
+/* Popular location end */
+
+
+/* Explore Section */
+
+.explore{
+    padding: 0px 210px 50px;
+    background-color: #fcfcfc;
+}
+
+.explore-card{
+    border-radius: 10px;
+    margin-top: 40px;
+    border: 1px solid rgb(232, 232, 232);
+    padding: 25px 70px;
+    max-height: 25px;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.explore-card:hover{
+    max-height: 10rem;
+}
+
+.visible-part-explore{
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+.visible-part-heading{
+    margin: 0 auto 0 0;
+}
+
+.visible-part-drop-arrow{
+    margin: 0 0 0 auto;
+}
+
+.hidden-part-explore{
+    margin-top: 40px;
+}
+
+
+/* Explore Section End */
 
 /*Get GOODIES app*/
 .goodies-app {

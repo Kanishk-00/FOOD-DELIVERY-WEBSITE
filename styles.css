@@ -472,7 +472,7 @@ a.lang-btn {
 }
 
 .footer-bar .footer-last-links ul li a:hover {
-	color: #1c1c1c;
+	color: yellowgreen;
 }
 
 .footer-bar .footer-last-links .footer-social-icons {
@@ -501,20 +501,13 @@ a.lang-btn {
 
 /* DARK-THEME BUTTON */
 
-*{
-    margin: 0;
-    padding: 100;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
+
 
 .main-container{
     width: 100%;
     height: 100%;
-    padding: 80px 20px;
     transition: .4s ease;
 }
-
 
 
 /* Styling the checkbox input */

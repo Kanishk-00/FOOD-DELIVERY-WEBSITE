@@ -53,6 +53,7 @@ body {
     text-decoration: none;
     /* color: white; */
     color: white;
+    transition: color 0.2s;
 }
 
 
@@ -61,9 +62,14 @@ body {
     color: white;
     padding: 0px 10px;
     font-weight: bold;
-    color: #000000;
 
 }
+
+.navbar a:hover{
+    color: lightgray;
+}
+
+
 
 
 .location-search {
@@ -98,7 +104,6 @@ body {
     padding: 0px 20px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-
 }
 
 .location-search-box {
@@ -141,7 +146,13 @@ body {
     background: white;
     border: 1px solid rgb(232, 232, 232);
     border-radius: 1.2rem;
+    transition: transform .3s;
 }
+
+.services-flex-item:hover{
+    transform: scale(1.05);
+}
+
 
 .services-flex-content > h4 {
     margin-top: 0px;
@@ -168,6 +179,73 @@ body {
 
 /* Services section ends */
 
+
+/* Collections */
+
+.collection{
+    padding: 50px 210px;
+}
+
+.all-collection-cards{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.collection-card{
+    width: 24%;
+    display: inline-flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* #collection-card-1{
+    background-image: url(img/collection_trending_bg.jpg);
+}
+
+#collection-card-2{
+    background-image: url(img/collection_dining_table.jpg);
+}
+
+#collection-card-3{
+    background-image: url(img/collection_bars.jpg);
+}
+
+#collection-card-4{
+    background-image: url(img/collection_romantic_dining_table.jpg);
+} */
+
+.collection-card-image{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.collection-card-detail{
+    width: 100%;
+    padding: 5px 0;
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    background-image: linear-gradient(transparent, black);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main-detail{
+    margin-bottom: 0px;
+    padding: 5px 20px 0;
+    font-size: 18px;
+
+}
+
+.card-detail-places{
+    margin-top: 3px;
+    padding:0px 20px;
+}
 
 /*Get GOODIES app*/
 .goodies-app {
@@ -335,7 +413,7 @@ a.lang-btn {
 }
 
 .footer-bar .footer-copyright {
-	padding-top: 20px;
-	padding-bottom: 30px;
+	padding: 15px;
+    text-align: center;
 	border-top: 1px solid #0a0a0a;
 }

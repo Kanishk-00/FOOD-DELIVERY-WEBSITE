@@ -538,7 +538,30 @@ body {
     height: 40px;
 }
 
+/* Partners Section Starts */
+.partner-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
 
+.partner-flex-item > img {
+    width: 250px;
+}
+
+#partner-heading {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #8c8c8c;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Partners Section Ends */
 
 /*Footer bar*/
 .footer-bar {
@@ -679,6 +702,14 @@ a.lang-btn {
 #checkbox:checked+.main-container .services-flex-container .services-flex-item {
     background: rgb(19, 18, 18);
     color: white;
+}
+
+#checkbox:checked+.main-container .partner-flex-container {
+    background: rgb(19, 18, 18);
+}
+
+#checkbox:checked+.main-container #partner-heading{
+    color: #f8efef;
 }
 
 #checkbox:checked::before {

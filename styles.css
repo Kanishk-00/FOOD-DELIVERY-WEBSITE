@@ -89,6 +89,12 @@ body {
     margin-top: 3px;
 }
 
+.main-logo {
+    height: 200px;
+    width:200px;
+    border-radius: 90%;
+}
+
 .navbar .navbar-nav {
     display: inline-flex;
     margin: 0px;
@@ -533,8 +539,9 @@ body {
 }
 
 .footer-bar .footer-lang img.footer-logo {
-
+    background-color: white;
     height: 150px;
+    margin-left: 20px;
 }
 
 .footer-bar .footer-lang a.lang-btn {
@@ -649,6 +656,10 @@ a.lang-btn {
 #checkbox:checked+.main-container {
     background: rgb(19, 18, 18);
     color: white;
+}
+
+#checkbox:checked+.main-container .footer-bar .footer-lang img.footer-logo {
+    background: rgb(19, 18, 18);
 }
 
 #checkbox:checked+.main-container .services-flex-container .services-flex-item {

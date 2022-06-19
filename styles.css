@@ -343,6 +343,20 @@ body {
 
 /* Collections End */
 
+/* Google Map Section */
+
+.maps{
+    padding: 50px 210px;
+}
+
+.map{
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+/* Google Maps Section Ends */
+
 /* Popular Locations */
 
 .popular-locations {

@@ -177,6 +177,73 @@ body {
     outline: none;
 }
 
+
+/* Styling the checkbox input */
+#checkbox {
+    position: absolute;
+    top: 1050px;
+    left: 5%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    width: 80px;
+    height: 40px;
+    background: black;
+    border-radius: 22px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* styling the circle inside the checkbox input */
+#checkbox::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 35px;
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+/* Switching to the dark when the checkbox is toggled */
+#checkbox:checked+.main-container {
+    background: rgb(19, 18, 18);
+    color: white;
+}
+
+#checkbox:checked+.main-container .footer-bar .footer-lang img.footer-logo {
+    background: rgb(19, 18, 18);
+}
+
+#checkbox:checked+.main-container .services-flex-container .services-flex-item {
+    background: rgb(19, 18, 18);
+    color: white;
+}
+
+#checkbox:checked+.main-container .partner-flex-container {
+    background: rgb(19, 18, 18);
+}
+
+#checkbox:checked+.main-container #partner-heading {
+    color: #f8efef;
+}
+
+#checkbox:checked::before {
+    left: 40px;
+    background-color: black;
+}
+
+/* changing the color of the checkbox when it's toggled */
+#checkbox:checked {
+    background: white;
+}
+
+
+
 /* about section starts */
 .about-flex-container {
     display: flex;
@@ -267,6 +334,22 @@ body {
         right: 0px;
         width: 180px;
     }
+
+    #checkbox {
+        position: absolute;
+        top: 1450px;
+        left: 5%;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        width: 80px;
+        height: 40px;
+        background: black;
+        border-radius: 22px;
+        cursor: pointer;
+        outline: none;
+    }
     
 
     .about-flex-item-1 {
@@ -324,6 +407,24 @@ body {
         width: 180px;
     }
 
+
+    #checkbox {
+        position: absolute;
+        top: 1450px;
+        left: 5%;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        width: 80px;
+        height: 40px;
+        background: black;
+        border-radius: 22px;
+        cursor: pointer;
+        outline: none;
+    }
+    
+
     .about-flex-item-1 {
         width: 100%;
         text-align: center;
@@ -377,6 +478,23 @@ body {
         right: 0px;
         width: 130px;
     }
+
+    #checkbox {
+        position: absolute;
+        top: 1450px;
+        left: 5%;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        width: 80px;
+        height: 40px;
+        background: black;
+        border-radius: 22px;
+        cursor: pointer;
+        outline: none;
+    }
+    
 
     .about-flex-item-1 {
         position: relative;
@@ -849,70 +967,6 @@ a.lang-btn {
     transition: .4s ease;
 }
 
-
-/* Styling the checkbox input */
-#checkbox {
-    position: absolute;
-    top: 1050px;
-    left: 5%;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    width: 80px;
-    height: 40px;
-    background: black;
-    border-radius: 22px;
-    cursor: pointer;
-    outline: none;
-}
-
-/* styling the circle inside the checkbox input */
-#checkbox::before {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 35px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 35px;
-    top: 2px;
-    left: 2px;
-    cursor: pointer;
-    transition: .3s linear;
-}
-
-/* Switching to the dark when the checkbox is toggled */
-#checkbox:checked+.main-container {
-    background: rgb(19, 18, 18);
-    color: white;
-}
-
-#checkbox:checked+.main-container .footer-bar .footer-lang img.footer-logo {
-    background: rgb(19, 18, 18);
-}
-
-#checkbox:checked+.main-container .services-flex-container .services-flex-item {
-    background: rgb(19, 18, 18);
-    color: white;
-}
-
-#checkbox:checked+.main-container .partner-flex-container {
-    background: rgb(19, 18, 18);
-}
-
-#checkbox:checked+.main-container #partner-heading {
-    color: #f8efef;
-}
-
-#checkbox:checked::before {
-    left: 40px;
-    background-color: black;
-}
-
-/* changing the color of the checkbox when it's toggled */
-#checkbox:checked {
-    background: white;
-}
 
 
 /* SCROLL TO THE TOP BUTTON */

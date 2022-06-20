@@ -104,7 +104,7 @@ body {
 .navbar-nav {
     display: inline-flex;
     margin: 0px;
-    padding-right:80px;
+    padding-right: 80px;
 }
 
 .navbar a {
@@ -131,7 +131,14 @@ body {
 .location-search {
     color: white;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 220px;
+
+    /* background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase; */
 }
 
 .location-search h1 {
@@ -260,7 +267,7 @@ body {
     text-align: center;
 }
 
-.about-flex-item-1 > h1 {
+.about-flex-item-1>h1 {
     position: absolute;
     left: 9%;
     top: 4%;
@@ -273,7 +280,7 @@ body {
     width: 50%;
 }
 
-.about-flex-item-2 > p{
+.about-flex-item-2>p {
     line-height: 2;
     padding-left: 80px;
     padding-right: 80px;
@@ -293,18 +300,18 @@ body {
     font-family: 'Roboto';
 }
 
-.about-images{
+.about-images {
     height: auto;
     opacity: 0.8;
 }
 
-.pizza-image{
+.pizza-image {
     position: absolute;
     right: 0;
     width: 180px;
 }
 
-.burger-image{
+.burger-image {
     position: absolute;
     width: 220px;
     left: 10px;
@@ -328,7 +335,7 @@ body {
         top: 1220px;
     }
 
-    .pizza-image{
+    .pizza-image {
         position: absolute;
         top: 636px;
         right: 0px;
@@ -350,7 +357,7 @@ body {
         cursor: pointer;
         outline: none;
     }
-    
+
 
     .about-flex-item-1 {
         right: 20%;
@@ -359,20 +366,21 @@ body {
         margin-bottom: 30px;
     }
 
-    .about-flex-item-1 > h1 {
+    .about-flex-item-1>h1 {
         position: absolute;
         left: 8%;
         bottom: 10%;
         font-size: 60px;
     }
 
-    .about-flex-item-2 > p{
+    .about-flex-item-2>p {
         line-height: 2;
         padding-left: 0px;
         padding-right: 0px;
         padding-top: 30%;
         font-size: 1.2rem;
     }
+
     #about-para {
         line-height: 2;
         font-size: 1.2rem;
@@ -380,7 +388,7 @@ body {
         padding-right: 0px;
         padding-top: 0%;
     }
-    
+
 }
 
 @media screen and (max-width: 940px) and (min-width : 700px) {
@@ -400,7 +408,7 @@ body {
         top: 1220px;
     }
 
-    .pizza-image{
+    .pizza-image {
         position: absolute;
         top: 636px;
         right: 0px;
@@ -423,7 +431,7 @@ body {
         cursor: pointer;
         outline: none;
     }
-    
+
 
     .about-flex-item-1 {
         width: 100%;
@@ -431,7 +439,7 @@ body {
         margin-bottom: 30px;
     }
 
-    .about-flex-item-1 > h1 {
+    .about-flex-item-1>h1 {
         margin-bottom: 20px;
         font-size: 60px;
     }
@@ -440,13 +448,14 @@ body {
         margin-top: 70px;
     }
 
-    .about-flex-item-2 > p{
+    .about-flex-item-2>p {
         line-height: 2;
         padding-left: 0px;
         padding-right: 0px;
         padding-top: 30%;
         font-size: 1.2rem;
     }
+
     #about-para {
         line-height: 2;
         font-size: 1.2rem;
@@ -472,7 +481,7 @@ body {
         top: 1150px;
     }
 
-    .pizza-image{
+    .pizza-image {
         position: absolute;
         top: 636px;
         right: 0px;
@@ -494,13 +503,13 @@ body {
         cursor: pointer;
         outline: none;
     }
-    
+
 
     .about-flex-item-1 {
         position: relative;
     }
 
-    .about-flex-item-1 > h1 {
+    .about-flex-item-1>h1 {
         position: absolute;
         left: 0;
         right: 0;
@@ -513,13 +522,14 @@ body {
         margin-top: 120px;
     }
 
-    .about-flex-item-2 > p{
+    .about-flex-item-2>p {
         line-height: 1.5;
         padding-left: 0px;
         padding-right: 0px;
         padding-top: 30%;
         font-size: 1.2rem;
     }
+
     #about-para {
         line-height: 1.5;
         font-size: 1.2rem;
@@ -1026,20 +1036,20 @@ a.lang-btn {
 /* Responsive */
 
 @media (max-width: 1000px) {
-    .collection-card{
+    .collection-card {
         max-width: 48%;
         margin-bottom: 15px;
     }
 
-    .navbar{
+    .navbar {
         justify-content: center;
     }
 
-    .navbar-brand-div{
+    .navbar-brand-div {
         margin: 0 auto;
     }
 
-    .navbar-items-div{
+    .navbar-items-div {
         margin: 0 auto;
 
     }
@@ -1047,8 +1057,212 @@ a.lang-btn {
 
 
 @media (max-width: 690px) {
-    .collection-card{
+    .collection-card {
         max-width: 100%;
         margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+.heading-shine {
+    /*SHINING STYLING*/
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    width: 50%;
+    /* height: 20%; */
+    background-image: radial-gradient(ellipse 50% 35% at 50% 50%,
+            #6b1839,
+            transparent);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    /* font-family: "Clip"; */
+    text-transform: uppercase;
+    margin-left: 148px;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+
+}
+
+
+/* SHINING TEXT ANIMATION SECTION: Breathe */
+
+@keyframes blink {
+
+    0%,
+    22%,
+    36%,
+    75% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+            -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+            0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+
+    28%,
+    33% {
+        color: #ff65bd;
+        text-shadow: none;
+    }
+
+    82%,
+    97% {
+        color: #ff2483;
+        text-shadow: none;
+    }
+}
+
+.flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+
+@keyframes shine {
+    0% {
+        color: #6b1839;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+            -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+            0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+}
+
+@keyframes flicker {
+    from {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0.9;
+    }
+
+    6% {
+        opacity: 0.85;
+    }
+
+    8% {
+        opacity: 0.95;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    11% {
+        opacity: 0.922;
+    }
+
+    12% {
+        opacity: 0.9;
+    }
+
+    14% {
+        opacity: 0.95;
+    }
+
+    16% {
+        opacity: 0.98;
+    }
+
+    17% {
+        opacity: 0.9;
+    }
+
+    19% {
+        opacity: 0.93;
+    }
+
+    20% {
+        opacity: 0.99;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    26% {
+        opacity: 0.94;
+    }
+
+    28% {
+        opacity: 0.98;
+    }
+
+    37% {
+        opacity: 0.93;
+    }
+
+    38% {
+        opacity: 0.5;
+    }
+
+    39% {
+        opacity: 0.96;
+    }
+
+    42% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: 0.97;
+    }
+
+    46% {
+        opacity: 0.94;
+    }
+
+    56% {
+        opacity: 0.9;
+    }
+
+    58% {
+        opacity: 0.9;
+    }
+
+    60% {
+        opacity: 0.99;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    72% {
+        opacity: 0.95;
+    }
+
+    93% {
+        opacity: 0.93;
+    }
+
+    95% {
+        opacity: 0.95;
+    }
+
+    97% {
+        opacity: 0.93;
+    }
+
+    to {
+        opacity: 1;
     }
 }

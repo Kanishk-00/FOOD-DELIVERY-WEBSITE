@@ -16,27 +16,27 @@ html {
 
 @keyframes slider {
     0% {
-        background-image: url("img/main-background.jpg");
+        background-image: url("../img/main-background.jpg");
     }
 
     15% {
-        background-image: url("img/main-background.jpg");
+        background-image: url("../img/main-background.jpg");
     }
 
     33% {
-        background-image: url("img/main-background-2.jpg");
+        background-image: url("../img/main-background-2.jpg");
     }
 
     48% {
-        background-image: url("img/main-background-2.jpg");
+        background-image: url("../img/main-background-2.jpg");
     }
 
     67% {
-        background-image: url("img/main-background-3.jpg");
+        background-image: url("../img/main-background-3.jpg");
     }
 
     82% {
-        background-image: url("img/main-background-3.jpg");
+        background-image: url("../img/main-background-3.jpg");
     }
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .starting-page {
-    background-image: url("img/main-background.jpg");
+    background-image: url("../img/main-background.jpg");
     background-size: 100% auto;
     background-clip: border-box;
     /* background-attachment: fixed; */

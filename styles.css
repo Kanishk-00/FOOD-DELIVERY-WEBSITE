@@ -72,9 +72,14 @@ body {
     background: rgba(93, 85, 85, 0.7);
     border: 1px solid black;
     /* background-color: lightblue; */
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: space-between;
 }
 
-.navbar .navbar-brand {
+.navbar-brand {
     font-size: 20px;
     font-weight: bold;
     /* color: white; */
@@ -83,8 +88,9 @@ body {
 
 }
 
-.navbar .navbar-items-div {
+.navbar-items-div {
     display: inline-flex;
+    flex-wrap: wrap;
     float: right;
     margin-top: 3px;
 }
@@ -95,9 +101,10 @@ body {
     border-radius: 90%;
 }
 
-.navbar .navbar-nav {
+.navbar-nav {
     display: inline-flex;
     margin: 0px;
+    padding-right:80px;
 }
 
 .navbar a {
@@ -109,7 +116,7 @@ body {
 }
 
 
-.navbar .nav-item {
+.nav-item {
     display: inline-flex;
     color: white;
     padding: 0px 10px;
@@ -124,7 +131,7 @@ body {
 .location-search {
     color: white;
     text-align: center;
-    margin-top: 120px;
+    padding-top: 120px;
 }
 
 .location-search h1 {
@@ -222,6 +229,25 @@ body {
     font-family: 'Roboto';
 }
 
+.about-images{
+    height: auto;
+    opacity: 0.8;
+}
+
+.pizza-image{
+    position: absolute;
+    right: 0;
+    width: 180px;
+}
+
+.burger-image{
+    position: absolute;
+    width: 220px;
+    left: 10px;
+    top: 850px;
+}
+
+
 /* about section ends */
 
 /* Services section starts */
@@ -286,7 +312,7 @@ body {
 /* Collections */
 
 .collection {
-    padding: 50px 210px;
+    padding: 4% 14%;
 }
 
 .all-collection-cards {
@@ -346,7 +372,7 @@ body {
 /* Google Map Section */
 
 .maps {
-    padding: 50px 210px;
+    padding: 4% 14%;
 }
 
 .map {
@@ -360,7 +386,7 @@ body {
 /* Popular Locations */
 
 .popular-locations {
-    padding: 30px 210px;
+    padding: 4% 14%;
 }
 
 .all-location-cards {
@@ -412,7 +438,7 @@ body {
 /* Explore Section */
 
 .explore {
-    padding: 50px 210px 50px;
+    padding: 4% 14%;
     /* background-color: #fcfcfc; */
 }
 
@@ -775,4 +801,34 @@ a.lang-btn {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .collection-card{
+        max-width: 48%;
+        margin-bottom: 15px;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+
+    .navbar-brand-div{
+        margin: 0 auto;
+    }
+
+    .navbar-items-div{
+        margin: 0 auto;
+
+    }
+}
+
+
+@media (max-width: 690px) {
+    .collection-card{
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
 }

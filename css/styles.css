@@ -606,17 +606,17 @@ body {
 }
 
 .info-item {
-    width:30%;
+    width: 30%;
     text-align: center;
 }
 
-.info-item > img {
+.info-item>img {
     width: 125px;
     height: 199px;
     margin-bottom: 42px;
 }
 
-.info-item > h3 {
+.info-item>h3 {
     color: #fff;
     font-family: 'Montserrat';
 }
@@ -1021,7 +1021,7 @@ a.lang-btn {
     margin-bottom: 5px;
 }
 
-.footer-list-title{
+.footer-list-title {
     color: white;
 }
 
@@ -1156,55 +1156,55 @@ a.lang-btn {
 }
 
 @media (max-width:770px) {
-    .navbar{
+    .navbar {
         display: block;
         text-align: center;
         padding: 20px 0px;
     }
 
-    .navbar-items-div{
+    .navbar-items-div {
         float: none;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         padding: 0;
         float: none;
     }
 
-    .nav-item{
+    .nav-item {
         font-size: 8px;
     }
 
-    .location-search h2{
+    .location-search h2 {
         font-size: 20px;
     }
 
-    .goodies-app{
+    .goodies-app {
         text-align: center;
         display: block;
     }
 
-    .goodies-app .goodies-app-right{
+    .goodies-app .goodies-app-right {
         width: 100vw;
         margin: 0;
     }
 
-    .goodies-app img{
+    .goodies-app img {
         margin: 0 auto;
     }
 
-    .goodies-app .radio-btn{
-       margin: 0 auto 20px;
+    .goodies-app .radio-btn {
+        margin: 0 auto 20px;
     }
 
-    .goodies-app .email-phone{
+    .goodies-app .email-phone {
         display: block;
 
         /* width: 60%;
         margin: auto; */
     }
 
-    .goodies-app .app-store{
+    .goodies-app .app-store {
         justify-content: center;
     }
 
@@ -1224,13 +1224,13 @@ a.lang-btn {
         margin: 0 auto 15px;
     }
 
-    .footer-bar .footer-last-links{
+    .footer-bar .footer-last-links {
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .footer-socials{
+    .footer-socials {
         text-align: center;
     }
 }
@@ -1436,5 +1436,28 @@ a.lang-btn {
 
     to {
         opacity: 1;
+    }
+}
+
+.blink-name {
+    font-size: 5em;
+    font-family: serif;
+    color: #ed5a6b;
+    text-align: center;
+    animation: animate 1.8s linear infinite;
+}
+
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
     }
 }

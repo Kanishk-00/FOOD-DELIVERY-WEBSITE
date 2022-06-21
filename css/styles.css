@@ -70,10 +70,10 @@ body {
     opacity: 0.6; */
     /* opacity: 0; */
     background: rgba(93, 85, 85, 0.7);
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* background-color: lightblue; */
     position: fixed;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     display: inline-flex;
     justify-content: space-between;
@@ -151,6 +151,7 @@ body {
 .location-search h2 {
     font-size: 30px;
     margin-top: 10px;
+    max-width: 100vw;
 }
 
 .location-input {
@@ -601,6 +602,7 @@ body {
     padding: 20px;
     padding-top: 0;
     height: 350px;
+    /* overflow: hidden; */
 }
 
 .info-item {
@@ -762,6 +764,7 @@ body {
     width: 100%;
     height: 50vh;
     border-radius: 10px;
+    margin: auto;
 }
 
 /* Google Maps Section Ends */
@@ -821,7 +824,7 @@ body {
 /* Explore Section */
 
 .explore {
-    padding: 4% 14%;
+    padding: 25px 14%;
     /* background-color: #fcfcfc; */
 }
 
@@ -829,7 +832,7 @@ body {
     border-radius: 10px;
     margin-top: 40px;
     border: 1px solid rgb(232, 232, 232);
-    padding: 25px 70px;
+    padding: 2.5% 4.5%;
     max-height: 25px;
     overflow: hidden;
     transition: max-height 0.4s;
@@ -976,6 +979,7 @@ body {
 .footer-bar {
     padding-top: 50px;
     background: #2b1e16;
+    max-width: 100%;
 }
 
 .footer-bar .footer-lang {
@@ -1151,11 +1155,83 @@ a.lang-btn {
     }
 }
 
+@media (max-width:770px) {
+    .navbar{
+        display: block;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .navbar-items-div{
+        float: none;
+    }
+
+    .navbar-nav{
+        padding: 0;
+        float: none;
+    }
+
+    .nav-item{
+        font-size: 8px;
+    }
+
+    .location-search h2{
+        font-size: 20px;
+    }
+
+    .goodies-app{
+        text-align: center;
+        display: block;
+    }
+
+    .goodies-app .goodies-app-right{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .goodies-app img{
+        margin: 0 auto;
+    }
+
+    .goodies-app .radio-btn{
+       margin: 0 auto 20px;
+    }
+
+    .goodies-app .email-phone{
+        display: block;
+
+        /* width: 60%;
+        margin: auto; */
+    }
+
+    .goodies-app .app-store{
+        justify-content: center;
+    }
+
+    /* .info-container{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .info-item{
+        max-width: 25%;
+    } */
+}
 
 @media (max-width: 690px) {
     .collection-card {
-        max-width: 100%;
-        margin-bottom: 15px;
+        max-width: 80%;
+        margin: 0 auto 15px;
+    }
+
+    .footer-bar .footer-last-links{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-socials{
+        text-align: center;
     }
 }
 

@@ -236,7 +236,7 @@ body {
 /* Styling the checkbox input */
 #checkbox {
     position: absolute;
-    top: 1050px;
+    top: 1420px;
     left: 5%;
     appearance: none;
     -webkit-appearance: none;
@@ -392,7 +392,7 @@ body {
 
     #checkbox {
         position: absolute;
-        top: 1450px;
+        top: 1820px;
         left: 5%;
         appearance: none;
         -webkit-appearance: none;
@@ -466,7 +466,7 @@ body {
 
     #checkbox {
         position: absolute;
-        top: 1450px;
+        top: 1820px;
         left: 5%;
         appearance: none;
         -webkit-appearance: none;
@@ -538,7 +538,7 @@ body {
 
     #checkbox {
         position: absolute;
-        top: 1450px;
+        top: 1820px;
         left: 5%;
         appearance: none;
         -webkit-appearance: none;
@@ -587,11 +587,50 @@ body {
     }
 }
 
-
-
-
 /* about section ends */
 
+/*info Section starts*/
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background:#3e2b20;
+    padding: 20px;
+    padding-top: 0;
+    height: 350px;
+}
+
+.info-item {
+    width:30%;
+    text-align: center;
+}
+
+.info-item > img {
+    width: 125px;
+    height: 199px;
+    margin-bottom: 42px;
+}
+
+.info-item > h3 {
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+.info-content {
+    font-size: 14px;
+    width: 225px;
+    margin-top: 10px;
+    color: #e0cbc1;
+    line-height: 1.3;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 20px;
+}
+
+/*info Section ends*/
 /* Services section starts */
 
 .services-flex-item>img {

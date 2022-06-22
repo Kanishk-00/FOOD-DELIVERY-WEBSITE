@@ -112,7 +112,7 @@ body {
     /* color: white; */
     color: white;
     transition: color 0.2s;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -393,7 +393,7 @@ body {
 
     #checkbox {
         position: absolute;
-        top: 1820px;
+        top: 1448px;
         left: 5%;
         appearance: none;
         -webkit-appearance: none;
@@ -467,7 +467,7 @@ body {
 
     #checkbox {
         position: absolute;
-        top: 1820px;
+        top: 1448px;
         left: 5%;
         appearance: none;
         -webkit-appearance: none;
@@ -539,7 +539,7 @@ body {
 
     #checkbox {
         position: absolute;
-        top: 1820px;
+        top: 1448px;
         left: 5%;
         appearance: none;
         -webkit-appearance: none;
@@ -702,6 +702,7 @@ body {
 
         text-align: center;
     }
+
 
     .info-item>img {
         width: 30%;
@@ -1205,7 +1206,7 @@ a.lang-btn {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 /* Track */

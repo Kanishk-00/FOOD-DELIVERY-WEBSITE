@@ -834,7 +834,7 @@ body {
 
 /* -------------------------------------------------------------------------------------------------------------- */
 
-/* Collections css starts */
+/* Collections section css starts */
 
 .collection {
     padding: 4% 14%;
@@ -892,7 +892,7 @@ body {
     padding: 0px 20px;
 }
 
-/* Collections css End */
+/* Collections section css End */
 
 /* -------------------------------------------------------------------------------------------------------------- */
 
@@ -1237,7 +1237,6 @@ a.lang-btn {
 
 /* -------------------------------------------------------------------------------------------------------------- */
 
-
 /* SCROLL TO THE TOP BUTTON css section starts*/
 
 .scroll-top {
@@ -1273,6 +1272,9 @@ a.lang-btn {
 /* -------------------------------------------------------------------------------------------------------------- */
 
 /* CUSTOM SCROLL BAR css starts*/
+
+/* what is webkit? :-  */
+/* webkit' extenstions are used in the CSS syntax for rendering content in Safari and Chrome browsers. */
 
 /* width */
 ::-webkit-scrollbar {

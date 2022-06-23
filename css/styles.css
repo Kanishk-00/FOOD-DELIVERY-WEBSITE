@@ -4,65 +4,15 @@ html {
     scroll-behavior: smooth;
 }
 
-@keyframes blur {
-    0% {
-        filter: blur(8px);
-    }
-
-    100% {
-        filter: blur(0px);
-    }
-}
-
-@keyframes slider {
-    0% {
-        background-image: url("../img/main-background.jpg");
-    }
-
-    15% {
-        background-image: url("../img/main-background.jpg");
-    }
-
-    33% {
-        background-image: url("../img/main-background-2.jpg");
-    }
-
-    48% {
-        background-image: url("../img/main-background-2.jpg");
-    }
-
-    67% {
-        background-image: url("../img/main-background-3.jpg");
-    }
-
-    82% {
-        background-image: url("../img/main-background-3.jpg");
-    }
-}
 
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
 
-.starting-page {
-    background-image: url("../img/main-background.jpg");
-    background-size: 100% auto;
-    background-clip: border-box;
-    background-attachment: fixed;
-    /* background-repeat: no-repeat; */
-    background-position: center;
-    /* opacity: 0.5; */
-    height: 600px;
-    animation: slider 10s infinite linear, blur 1.5s 1;
+/* -------------------------------------------------------------------------------------------------------------- */
 
-}
-
-.starting-page .masking-div {
-    background: rgba(0, 0, 0, 0.5);
-    height: 600px;
-}
-
+/*Navbar css section starts*/
 .navbar {
     padding: 20px 50px;
     z-index: 1;
@@ -128,6 +78,126 @@ body {
     color: lightgray;
 }
 
+/*Navbar css section ends*/
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Home page css starts  */
+.starting-page {
+    background-image: url("../img/main-background.jpg");
+    background-size: 100% auto;
+    background-clip: border-box;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    /* opacity: 0.5; */
+    height: 600px;
+    animation: slider 10s infinite linear, blur 1.5s 1;
+
+}
+
+.starting-page .masking-div {
+    background: rgba(0, 0, 0, 0.5);
+    height: 600px;
+}
+
+/* Blur effect at the start of refresh of the page  */
+
+@keyframes blur {
+    0% {
+        filter: blur(8px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
+
+/* Background slide show effect animation in home page background */
+
+@keyframes slider {
+    0% {
+        background-image: url("../img/main-background.jpg");
+    }
+
+    15% {
+        background-image: url("../img/main-background.jpg");
+    }
+
+    33% {
+        background-image: url("../img/main-background-2.jpg");
+    }
+
+    48% {
+        background-image: url("../img/main-background-2.jpg");
+    }
+
+    67% {
+        background-image: url("../img/main-background-3.jpg");
+    }
+
+    82% {
+        background-image: url("../img/main-background-3.jpg");
+    }
+}
+
+/* Home page css ends*/
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Typewriter Effect */
+.typing-effect {
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter h2 {
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+/* Typing effect ends */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*Location search css starts */
+
 .location-search {
     color: white;
     text-align: center;
@@ -185,54 +255,17 @@ body {
     outline: none;
 }
 
-/* Typewriter Effect */
-.typing-effect {
-    display: flex;
-    justify-content: center;
+/*Location search css starts */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*Dark theme button css starts */
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    transition: .7s ease;
 }
-
-.typewriter h2 {
-    color: rgb(255, 255, 255);
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0em;
-    /* Adjust as needed */
-    animation:
-        typing 3.5s steps(30, end),
-        blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: orange
-    }
-}
-
-/* Typing effect ends */
 
 /* Styling the checkbox input */
 #checkbox {
@@ -251,7 +284,7 @@ body {
     outline: none;
 }
 
-/* styling the circle inside the checkbox input */
+/* styling the circle inside the checkbox input before getting toggled */
 #checkbox::before {
     content: '';
     position: absolute;
@@ -266,6 +299,10 @@ body {
 }
 
 /* Switching to the dark when the checkbox is toggled */
+
+/* changing the background of the following div as well as our main container to black  */
+/* and the color of the font to white when the checkbox is checked  */
+
 #checkbox:checked+.main-container {
     background: rgb(19, 18, 18);
     color: white;
@@ -289,14 +326,16 @@ body {
     background-color: black;
 }
 
-/* changing the color of the checkbox when it's toggled */
+/* changing the color of the checkbox when it's toggled from black to white*/
 #checkbox:checked {
     background: white;
 }
 
+/*Dark theme button css ends */
 
+/* -------------------------------------------------------------------------------------------------------------- */
 
-/* about section starts */
+/* about section css starts */
 .about-flex-container {
     display: flex;
     flex-direction: row;
@@ -362,6 +401,12 @@ body {
     left: 10px;
     top: 850px;
 }
+
+/* about section css ends */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Responsive css for about us with respect to dark theme button starts */
 
 @media screen and (max-width: 1160px) and (min-width : 940px) {
     .about-flex-container {
@@ -584,9 +629,12 @@ body {
     }
 }
 
-/* about section ends */
 
-/*info Section starts*/
+/* Responsive css for about us with respect to dark theme button ends */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*info Section css starts*/
 .info-container {
     display: flex;
     flex-direction: row;
@@ -625,6 +673,8 @@ body {
     font-family: 'Lato', sans-serif;
     padding-bottom: 20px;
 }
+
+/* Responsive css for info div starts */
 
 @media screen and (max-width: 1000px) {
     .info-container {
@@ -723,7 +773,12 @@ body {
     }
 }
 
+/* Responsive css for info div starts */
+
 /*info Section ends*/
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
 /* Services section starts */
 
 .services-flex-item>img {
@@ -770,14 +825,6 @@ body {
     line-height: 1.25;
 }
 
-/* #services-flex-item-1 {
-    margin-left: 200px;
-}
-
-#services-flex-item-3 {
-    margin-right: 200px;
-} */
-
 .services-flex-content {
     text-align: left;
     padding: 10px;
@@ -785,8 +832,9 @@ body {
 
 /* Services section ends */
 
+/* -------------------------------------------------------------------------------------------------------------- */
 
-/* Collections */
+/* Collections css starts */
 
 .collection {
     padding: 4% 14%;
@@ -844,9 +892,11 @@ body {
     padding: 0px 20px;
 }
 
-/* Collections End */
+/* Collections css End */
 
-/* Google Map Section */
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Google Map Section css starts*/
 
 .maps {
     padding: 4% 14%;
@@ -859,9 +909,11 @@ body {
     margin: auto;
 }
 
-/* Google Maps Section Ends */
+/* Google Maps Section css Ends */
 
-/* Popular Locations */
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Popular Locations css starts*/
 
 .popular-locations {
     padding: 4% 14%;
@@ -910,10 +962,11 @@ body {
     position: relative;
 }
 
-/* Popular location end */
+/* Popular location css ends/
 
+/* -------------------------------------------------------------------------------------------------------------- */
 
-/* Explore Section */
+/* Explore Section css starts*/
 
 .explore {
     padding: 25px 14%;
@@ -953,9 +1006,12 @@ body {
 }
 
 
-/* Explore Section End */
+/* Explore Section css ends */
 
-/*Get GOODIES app*/
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*Get the EAT TREAT app page css starts*/
+
 .goodies-app {
     margin: 50px auto 50px;
     /* padding-top: 20px; */
@@ -1042,7 +1098,25 @@ body {
     height: 40px;
 }
 
-/* Partners Section Starts */
+/*Get the EAT TREAT app page css ends here*/
+
+/*Zoom-In Effect to Moble App Image*/
+
+/* the transformation will be updated 0.2s after the user hovers over the image*/
+.zoom-image {
+    /* Animation */
+    transition: transform .2s;
+}
+
+/* the transformation added is scaling i.e scales the image as a zoom in effect by 1.19 times */
+.zoom-image:hover {
+    transform: scale(1.19);
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Partners Section css Starts */
+
 .partner-flex-container {
     display: flex;
     justify-content: space-evenly;
@@ -1065,9 +1139,11 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Partners Section Ends */
+/* Partners Section css Ends */
 
-/*Footer bar section starts*/
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*FOOTER section css section starts*/
 
 .footer-bar {
     padding-top: 50px;
@@ -1157,21 +1233,12 @@ a.lang-btn {
     color: white;
 }
 
-/*Footer bar section starts*/
+/*FOOTER section css ends here*/
+
+/* -------------------------------------------------------------------------------------------------------------- */
 
 
-/* DARK-THEME BUTTON */
-
-
-.main-container {
-    width: 100%;
-    height: 100%;
-    transition: .4s ease;
-}
-
-
-
-/* SCROLL TO THE TOP BUTTON */
+/* SCROLL TO THE TOP BUTTON css section starts*/
 
 .scroll-top {
     top: 80%;
@@ -1201,16 +1268,20 @@ a.lang-btn {
     opacity: initial;
 }
 
-/* CUSTOM SCROLL BAR  */
+/* SCROLL TO THE TOP BUTTON css section starts*/
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* CUSTOM SCROLL BAR css starts*/
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
+    box-shadow: inset 0 0 5px rgb(245, 172, 108);
     border-radius: 1px;
 }
 
@@ -1223,6 +1294,15 @@ a.lang-btn {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #5c0808;
+}
+
+/* CUSTOM SCROLL BAR css ends*/
+
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    transition: .7s ease;
 }
 
 /* Responsive */
@@ -1329,6 +1409,7 @@ a.lang-btn {
 
 
 
+/* -------------------------------------------------------------------------------------------------------------- */
 
 
 .heading-shine {
@@ -1552,16 +1633,4 @@ a.lang-btn {
     100% {
         opacity: 0;
     }
-}
-
-/*ZOOM EFFECT TO MOBILE APP IMAGE*/
-
-.zoom-image {
-    transition: transform .2s;
-    /* Animation */
-}
-
-.zoom-image:hover {
-    transform: scale(1.19);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

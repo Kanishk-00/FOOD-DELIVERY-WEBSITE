@@ -5,27 +5,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- WebPage Title -->
   <title>Food Delivery Website</title>
+
+  <!-- Linking CSS File -->
+  
   <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Google Fonts Linked -->
+  
   <link
     href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@800&family=Ubuntu:wght@300&display=swap"
     rel="stylesheet">
+
+  <!-- Linked Font Awesome for some icons -->
+  
   <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+
+  <!-- Favicon added -->
+  
   <link rel="icon" type="image/png" sizes="180x180" href="img/apple-touch-icon.png">
+  
   <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
+  <!-- Light and Dark Theme Switch Button  -->
+  
   <input type="checkbox" id="checkbox">
-  <div class="main-container" id="#home">
+  
+  <!-- Home Section Starts-->
+
+  <div class="main-container">
     <div class="starting-page" id="home">
+
+      <!-- Using a div to mask background so that it look more perfect -->
+
       <div class="masking-div">
+
+        <!-- Navbar Starts from here -->
+ 
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+          
+          <!-- Navbar Brand or Text which will be aligned on left side -->
+          
           <div class="navbar-brand-div">
             <a class="navbar-brand" href="./index.html">EAT TREAT</a>
           </div>
+          
+          <!-- Navbar redirecting links which will be aligned on right side -->
+          
           <div class="navbar-items-div" id="navbarSupportedContent">
+            
+            <!-- Defining Navbar Items as a unordered list's item-->
+            
             <ul class="navbar-nav">
+              
+              <!-- Navbar Items -->
+
               <li class="nav-item active">
                 <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
@@ -51,12 +89,24 @@
                 <a class="nav-link" href="#footer-bar">Contact Us</a>
               </li>
             </ul>
+
           </div>
+          
+          <!-- Navbar Items Div Ended -->
+        
         </nav>
 
+        <!-- Navbar Ends -->
+
+        <!-- Location Search Section of Home Page  -->
 
         <div class="location-search">
+          <!-- Main Logo of company goes here -->
+          
           <img class="main-logo" src="img/mainlogo.png">
+          
+          <!-- Motto of the Company goes here. It will be displayed with a typing animation-->
+          
           <div class="typing-effect">
             <div class="typewriter">
               <h2 style="  font-family: 'Montserrat', sans-serif;">
@@ -65,7 +115,12 @@
             </div>
           </div>
 
+          <!-- Main location search bar -->
+          
           <div class="location-input">
+
+            <!-- Left Side Dropdown Menu with some city names -->
+            
             <select name="" id="">
               <option value="Lucknow">Lucknow</option>
               <option value="Delhi">Delhi</option>
@@ -73,12 +128,20 @@
               <option value="Mumbai">Mumbai</option>
               <option value="Karnataka">Karnataka</option>
             </select>
+            
+            <!-- Right Side Search Bar -->
+            
             <input class="location-search-box" type="text" name="" id=""
               placeholder="Search for a restaurant, cuisine or a dish">
           </div>
         </div>
+
+        <!-- Location Search Div Ends Here -->
+
       </div>
     </div>
+
+    <!-- Home Section Ends -->
 
     <div class="about-flex-container" id="aboutus">
       <img class="about-images pizza-image" src="img/pizza_slice.png" alt="">
@@ -149,19 +212,36 @@
     </div>
     <!-- info section ends -->
 
-    <!-- Collections Container -->
+    <!-- Collections Container Starts-->
 
     <div class="collection" id="collections">
+
+      <!-- Main Heading of Section with subheading-->
+      
       <h1>Collections</h1>
       <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Lucknow, based on trends</p>
+
+      <!-- Div of all collection cards, used to style things in between the cards -->
+      
       <div class="all-collection-cards">
+
+        <!-- Div of a single collection-card composed of a image and a subheading -->
         <div class="collection-card" id="collection-card-1">
+
+          <!-- image of respective card which will be displayed as a background image -->
+          
           <img class="collection-card-image" src="img/collection_trending_bg.jpg" alt="">
+          
+          <!-- Detail section of Collection card composed of a respective heading and number of places  -->
+          
           <div class="collection-card-detail">
             <p class="main-detail">Trending This Week</p>
             <p class="card-detail-places">15 Places <i class="fa-solid fa-caret-right"></i></p>
           </div>
         </div>
+        
+        <!-- 2nd collection card div -->
+        
         <div class="collection-card" id="collection-card-2">
           <img class="collection-card-image" src="img/collection_dining_table.jpg" alt="">
           <div class="collection-card-detail">
@@ -169,6 +249,9 @@
             <p class="card-detail-places">20 Places <i class="fa-solid fa-caret-right"></i></p>
           </div>
         </div>
+        
+        <!-- 3rd collection card div -->
+        
         <div class="collection-card" id="collection-card-3">
           <img class="collection-card-image" src="img/collection_bars.jpg" alt="">
           <div class="collection-card-detail">
@@ -176,6 +259,9 @@
             <p class="card-detail-places">9 Places <i class="fa-solid fa-caret-right"></i></p>
           </div>
         </div>
+        
+        <!-- 4th collection card div -->
+        
         <div class="collection-card" id="collection-card-4">
           <img class="collection-card-image" src="img/collection_romantic_dining_table.jpg" alt="">
           <div class="collection-card-detail">
@@ -184,75 +270,125 @@
           </div>
         </div>
       </div>
+
+      <!-- All collection card div ends here -->
+
     </div>
 
-    <!--Popular Locations Section-->
+    <!-- Collections Section Ends Here -->
+
+    <!--Popular Locations Section Starts-->
 
     <div class="popular-locations" id="popularlocations">
+
+      <!-- Main heading and subheading of the section goes here -->
+      
       <h1>Popular Locations in India</h1>
       <p>Have a look on the popular restaurants and bar in India.</p>
+      
+      <!-- Div containing all location card starts -->
+
       <div class="all-location-cards">
+
+        <!-- Location Card 1 composed of name of a city and the number of restaurents or cafes in the city -->
+        
         <div class="location-card">
           <p class="location-card-heading">Lucknow</p>
           <p class="redirecting-arrow">></p>
           <p class="location-card-places">72 Places</p>
         </div>
+       
+        <!-- location card 2 -->
+        
         <div class="location-card">
           <p class="location-card-heading">Delhi</p>
           <p class="redirecting-arrow">></p>
           <p class="location-card-places">98 Places</p>
         </div>
+
+        <!-- location card 3 -->
+
         <div class="location-card">
           <p class="location-card-heading">Mumbai</p>
           <p class="redirecting-arrow">></p>
           <p class="location-card-places">107 Places</p>
         </div>
+
+        <!-- location card 4 -->
+
         <div class="location-card">
           <p class="location-card-heading">Indore</p>
           <p class="redirecting-arrow">></p>
           <p class="location-card-places">62 Places</p>
         </div>
+
+        <!-- location card 5 -->
+
         <div class="location-card">
           <p class="location-card-heading">Panji</p>
           <p class="redirecting-arrow">></p>
           <p class="location-card-places">54 Places</p>
         </div>
+
+        <!-- location card 6 -->
+
         <div class="location-card">
           <p class="location-card-heading">Patna</p>
           <p class="redirecting-arrow">></p>
           <p class="location-card-places">51 Places</p>
         </div>
+
+        <!-- location card 7 -->
+
         <div class="location-card">
           <p class="location-card-heading">Agra</p>
           <p class="redirecting-arrow">></p>
           <p class="location-card-places">68 Places</p>
         </div>
+
+        <!-- location card 8 -->
+
         <div class="location-card">
           <p class="location-card-heading">Srinagar</p>
           <p class="redirecting-arrow">></p>
           <p class="location-card-places">41 Places</p>
         </div>
+
+        <!-- location card 9 -->
         <div class="location-card">
           <p class="location-card-heading">Odisha</p>
           <p class="redirecting-arrow">></p>
           <p class="location-card-places">67 Places</p>
         </div>
       </div>
+
+      <!-- All Location Card div ends here -->
     </div>
 
-    <!-- FIND YOUR LOCATION -->
+    <!-- Locations Div ends here -->
+
+    <!-- FIND YOUR LOCATION div starts-->
 
     <div class="maps">
+
+      <!-- Main heading and subheading of the section -->
+      
       <div class="maps-heading">
         <h1>Find Your Location Here</h1>
         <p>This Google Map will help you in finding your location.</p>
       </div>
+      
+      <!-- Embedding Google Maps -->
+      
       <div class="google-maps">
         <iframe class="map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d359016.0398430767!2d77.29037389081533!3d28.54962565962737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1655649056397!5m2!1sen!2sin"
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+
     </div>
+
+    <!-- Find your location div ends here -->
 
     <!-- Get EATTREAT app -->
     <section class="goodies-app">
@@ -282,15 +418,28 @@
       </div>
     </section>
 
-    <!-- Explore Section-->
+    <!-- Explore Section Starts-->
 
     <div class="explore" id="explore">
+
+      <!-- Main heading of the section goes here -->
+      
       <h1 style="font-family:'Georgia';">Explore options near you</h1>
+      
+      <!-- Explore Card 1 consisting of a heading which will be displayed initially and a list of 'near me' statements which will be 
+      hidden and displayed on hovering main heading of the card -->
+      
       <div class="explore-card">
+
+        <!-- Visible part of the card -->
+        
         <div class="visible-part-explore">
           <p class="visible-part-heading">Popular cuisines near me</p>
           <p class="visible-part-drop-arrow"><i class="fa-solid fa-chevron-down"></i></p>
         </div>
+
+        <!-- Hidden part of the card -->
+
         <div class="hidden-part-explore">
           Bakery food near me . Beverages food near me . Biryani food near me . Burger food near me . Chinese food near
           me . Continental food near me . Desserts food near me . Ice Cream food near me . Italian food near me . Mithai
@@ -299,11 +448,20 @@
           near me . Street food near me .
         </div>
       </div>
+
+      <!-- Explore Card 2 -->
+      
       <div class="explore-card">
+
+        <!-- Visible part of the Card -->
+
         <div class="visible-part-explore">
           <p class="visible-part-heading">Popular restaurant types near me</p>
           <p class="visible-part-drop-arrow"><i class="fa-solid fa-chevron-down"></i></p>
         </div>
+
+        <!-- Hidden part of the card -->
+
         <div class="hidden-part-explore">
           Bakeries near me . Bars near me . Beverage Shops near me . Bhojanalya near me . Cafés near me . Casual Dining
           near me . Clubs near me . Cocktail Bars near me . Dessert Parlors near me . Dhabas near me . Fine Dining near
@@ -311,16 +469,9 @@
           near me . Quick Bites near me . Sweet Shops near me .
         </div>
       </div>
-      <!-- <div class="explore-card">
-        <div class="visible-part-explore">
-          <p class="visible-part-heading">Top Restaurant Chains</p>
-          <p class="visible-part-drop-arrow"><i class="fa-solid fa-chevron-down"></i></p>
-        </div>
-        <div class="hidden-part-explore">
-
-        </div>
-      </div> -->
     </div>
+
+    <!-- Explore Section Ends -->
 
     <!-- Partners Section -->
     <h2 id="partner-heading">Our Partners</h2>

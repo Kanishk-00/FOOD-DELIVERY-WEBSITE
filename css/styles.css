@@ -1124,7 +1124,7 @@ body {
     margin-bottom: 20px;
 }
 
-.partner-flex-item>img {
+.partner-flex-item a img {
     width: 250px;
 }
 
